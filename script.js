@@ -31,6 +31,12 @@ inputs.forEach((input, index1) => {
                 }
             })
         }
+
+        if(!inputs[3].disabled && inputs[3].value !==""){
+            button.classList.add("active");
+        }else{
+             button.classList.remove("active");
+        }
       
 
     });
