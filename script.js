@@ -27,7 +27,7 @@ inputs.forEach((input, index1) => {
                 if(index1 <= index2 && prevInput){
                     input.setAttribute("disabled",true);
                     currentInput.value="";
-                    nextInput.focus();
+                    prevInput.focus();
                 }
             })
         }
