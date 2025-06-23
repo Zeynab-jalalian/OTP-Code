@@ -11,7 +11,7 @@ inputs.forEach((input, index1) => {
         const currentInput = input,
             nextInput = input.nextElementSibling,
             prevInput = input.previousElementSibling;
-
+            
         if (currentInput.value.length > 1) {
             currentInput.value = "";
             return;
@@ -27,7 +27,7 @@ inputs.forEach((input, index1) => {
                 if(index1 <= index2 && prevInput){
                     input.setAttribute("disabled",true);
                     currentInput.value="";
-                    prevInput.focus();
+                    nextInput.focus();
                 }
             })
         }
